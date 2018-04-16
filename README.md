@@ -1,3 +1,3 @@
 # mongo_notes
 
-[Configration file](/ConfigrationFile.md)
+1. [Configration file](/ConfigrationFile.md)
