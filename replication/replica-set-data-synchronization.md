@@ -1,12 +1,12 @@
-replica set data synchronization
+# replica set data synchronization
 
-# overview
+## overview
 
 1. intial sync，可以理解为全量同步
 2. replication，追同步源的oplog，可以理解为增量同步
 
 
-# initial sync
+## initial sync
 
 1. Secondary节点当出现如下状况时，需要先进行全量同步
 
@@ -34,12 +34,12 @@ replica set data synchronization
     10. 重放[t3, t4]范围内所有的oplog
     11. 全量同步结束，清除minvalid集合的_initialSyncFlag
 
-# replication
+## replication
 
 initial sync结束后，接下来Secondary就会不断拉取主上新产生的oplog并重放。
 
 
-# 注意事项
+## 注意事项
 1. initial sync复制数据，效率较低，生产环境应该尽量避免initial sync出现，需合理配置oplog，按默认『5%的可用磁盘空间』来配置oplog在绝大部分场景下都能满足需求，特殊的case(case1, case2)可根据实际情况设置更大的oplog
 
 2. 新加入节点时，可以通过物理复制的方式来避免initial sync，将Primary上的dbpath拷贝到新的节点，直接启动，这样效率更高

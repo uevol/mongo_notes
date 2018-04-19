@@ -1,6 +1,6 @@
-Replica Set Member
+# Replica Set Member
 
-# Overview
+## Overview
 
 复制集是一组mongod实例，提供高可用和数据冗余功能
 
@@ -12,14 +12,14 @@ Replica Set Member
 
 ![replica set](../public/pics/replica-set-read-write-operations-primary.bakedsvg.svg)
 
-# 主节点(Primary)
+## 主节点(Primary)
 
 1. 主节点是复制集中唯一接受写操作的节点, 复制集中最多只有一个主节点
 
 2. 复制集中所有数据节点都可读，默认从主节点读
 
 
-# 从节点(Secondaries)
+## 从节点(Secondaries)
 
 1. 从节点跟主节点拥有相同的数据
 
@@ -54,7 +54,7 @@ Replica Set Member
         5. 在分片集群不可用，因为分片集群的会在延迟时间没发生chunk移动
 
 
-# 仲裁节点(Arbiter)
+## 仲裁节点(Arbiter)
 
 1. 仲裁节点不保存数据并且无法成为主节点，仅有投票权
 

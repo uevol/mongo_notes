@@ -1,6 +1,6 @@
-Oplog
+# Oplog
 
-# overvivew
+## overvivew
 
 1. oplog在第一次开启复制集时生成，存放在local.oplog.rs，是一个capped collection
 
@@ -8,7 +8,7 @@ Oplog
 
 3. oplog中的操作的都是幂等的
 
-# oplog size
+## oplog size
 
 ![oplog size](../public/pics/oplogsize.png)
 
@@ -29,7 +29,7 @@ Oplog
     3. 文档内字段更新后，文档大小不变，数据库会记录大量的操作，但此时数据库数据存储大小基本不变
 
 
-# oplog status
+## oplog status
 
 1. rs.printReplicationInfo()查看oplog status
 
