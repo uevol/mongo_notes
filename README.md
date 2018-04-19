@@ -1,5 +1,10 @@
 # mongodb_notes
 
-1. [Configration file](/ConfigrationFile.md)
+[Configration file](/ConfigrationFile.md)
 
-2. [replication](/replication)
+[replication](/replication)
+    
+    [replica set member](/replication/replica-set-member.md)
+    [oplog](/replication/oplog.md)
+    [replica set data synchronization](/replication/replica-set-data-synchronization.md)
+    [replica set elections](/replication/replica-set-elections.md)
