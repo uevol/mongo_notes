@@ -1,3 +1,5 @@
-# mongo_notes
+# mongodb_notes
 
-1. [Configration file](/ConfigrationFile.md)# mongno_notes
+1. [Configration file](/ConfigrationFile.md)
+
+2. [replication](/replication)
