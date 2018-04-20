@@ -36,7 +36,9 @@
 
 ## replication
 
-initial sync结束后，接下来Secondary就会不断拉取主上新产生的oplog并重放。
+initial sync结束后，接下来Secondary就会不断拉取主上新产生的oplog并重放
+
+oplog重放时，从节点读阻塞，无法读取
 
 
 ## 注意事项

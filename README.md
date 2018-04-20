@@ -11,3 +11,5 @@
 3. [replica set data synchronization](/replication/replica-set-data-synchronization.md)
 
 4. [replica set elections](/replication/replica-set-elections.md)
+
+5. [Rollbacks During Replica Set Failover](/replication/Rollbacks-During-Replica-Set-Failover.md)
