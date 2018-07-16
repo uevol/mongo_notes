@@ -13,3 +13,5 @@
 4. [replica set elections](/replication/replica-set-elections.md)
 
 5. [Rollbacks During Replica Set Failover](/replication/Rollbacks-During-Replica-Set-Failover.md)
+
+6. [Write Concern for Replica Sets](/replication/Write-Concern-for-Replica-Sets.md)

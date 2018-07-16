@@ -1,0 +1,6 @@
+#logFile                                
+/data-mongo/shard/log/config.log
+/data-mongo/shard1/master/log/shard.log
+/data-mongo/shard2/slave/log/shard.log
+/data-mongo/shard3/arbiter/log/shard.log
+/data-mongo/shard/log/mongos.log
