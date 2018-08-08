@@ -76,7 +76,7 @@ rs.initiate(
 use admin
 db.createUser(
   {
-    user: "admin",
+    user: "userAdmin",
     pwd: "R00t@123",
     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
   }
