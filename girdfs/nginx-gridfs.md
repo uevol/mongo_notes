@@ -42,7 +42,7 @@ vi /usr/local/nginx/conf/nginx.conf
 
 #添加以下内容
  
-        location /girdfstest/ {
+        location /gridfstest/ {
             gridfs pics
             field=filename
             type=string;
@@ -86,7 +86,7 @@ finished writing to 1.JPG
 
 #### 4. http访问：
 ```
-http://ipaddress:port/girdfstest/1.JPG
+http://ipaddress:port/gridfstest/1.JPG
 ```
 
 #### 5. 开启数据库认证后，认证失败
@@ -109,11 +109,9 @@ mongodb在3.0版本之前默认使用的MongoDB Challenge and Response (MONGODB-
 
 	use admin
 
-	var schema = db.system.version.findOne({"_id" : "authSchema"})
+	db.system.version.update({ "_id" : "authSchema"}, {"$set": {"currentVersion" : 3 }}, {upsert: true})
 
-	schema.currentVersion = 3
-
-	db.system.version.save(schema)
+	db.system.version.find({ "_id" : "authSchema"})
 
 4. 关闭数据库以认证的方式开启数据库
 
